@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.search-export-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-search {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  margin: 0;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 250px;
+  outline: none;
+  font-size: 14px;
+}
+
+.button-submit .search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.export-button {
+  background-color: #1e88e5;
+  color: white;
+  text-transform: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.export-button:hover {
+  background-color: #1565c0;
+}
+
+.table-container {
+  margin-top: 20px;
+  box-shadow: none;
+  border-top: 1px solid #ddd;
+}
+
+.table-title,
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.table-title {
+  background-color: #f4f6f8;
+  font-weight: 500;
+}
+
+.product-item {
+  align-items: center;
+}
+
+.product-item li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.table-title li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.even-row {
+  background-color: #f9f9f9;
+}
+
+.odd-row {
+  background-color: #ffffff;
+}
+
+.tracking-button {
+  background-color: #e3f2fd;
+  color: #1e88e5;
+  text-transform: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.tracking-button:hover {
+  background-color: #bbdefb;
+}
+
+.action-button {
+  color: #1e88e5;
+}
+
+.action-button:hover {
+  color: #1565c0;
+}
+
+.delete-button {
+  color: red;
+}
+
+.delete-button:hover {
+  color: darkred;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.delivery-man-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+.pagination-button {
+  background-color: #e3f2fd;
+  color: #1e88e5;
+  margin: 0 5px;
+  border-radius: 8px;
+}
+
+.pagination-button.active {
+  background-color: #1e88e5;
+  color: white;
+}

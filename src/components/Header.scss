@@ -1,0 +1,136 @@
+// Header.scss
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    .header-left {
+      .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        padding: 5px 10px;
+  
+        input {
+          border: none;
+          background: none;
+          outline: none;
+          padding: 5px;
+          font-size: 16px;
+          color: #333;
+        }
+  
+        .search-icon {
+          color: #888;
+          font-size: 16px;
+        }
+      }
+    }
+  
+    .header-right {
+      display: flex;
+      align-items: center;
+  
+      .header-icon {
+        margin-left: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        color: #888;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #007bff;
+        }
+      }
+  
+      .notification {
+        position: relative;
+  
+        &::after {
+          content: '1';
+          position: absolute;
+          top: -5px;
+          right: -10px;
+          background-color: #f00;
+          color: #fff;
+          font-size: 12px;
+          padding: 2px 5px;
+          border-radius: 50%;
+        }
+      }
+  
+      .admin {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 20px;
+        position: relative;
+  
+        .admin-icon {
+          font-size: 24px;
+          color: #888;
+        }
+  
+        .admin-name {
+          margin-left: 10px;
+          font-size: 16px;
+          color: #333;
+        }
+  
+        .admin-role {
+          margin-left: 5px;
+          font-size: 14px;
+          color: #888;
+        }
+  
+        .admin-menu {
+          position: absolute;
+          top: 100%;
+          right: 0;
+          background-color: #fff;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+          overflow: hidden;
+          margin-top: 10px;
+          z-index: 1000;
+  
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+  
+            li {
+              display: flex;
+              align-items: center;
+              padding: 10px;
+              cursor: pointer;
+              transition: background-color 0.3s;
+  
+              &:hover {
+                background-color: #f0f0f0;
+              }
+  
+              svg {
+                margin-right: 10px;
+                color: #888;
+              }
+  
+              .badge {
+                margin-left: auto;
+                background-color: #007bff;
+                color: #fff;
+                font-size: 12px;
+                padding: 2px 5px;
+                border-radius: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

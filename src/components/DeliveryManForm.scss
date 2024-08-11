@@ -1,0 +1,53 @@
+// DeliveryManForm.scss
+.delivery-man-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .upload-photo {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+
+    .drop-area {
+      width: 100%;
+      height: 200px;
+      border: 2px dashed #007bff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      text-align: center;
+
+      .drop-text {
+        color: #007bff;
+
+        .click-browse {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .photo-preview {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+}

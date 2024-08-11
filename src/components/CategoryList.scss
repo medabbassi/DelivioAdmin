@@ -1,0 +1,44 @@
+.table-container {
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+  
+      th {
+        background-color: #f9f9f9;
+      }
+  
+      .category-image {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+  
+      .even-row {
+        background-color: #f9f9f9;
+      }
+  
+      .odd-row {
+        background-color: #fff;
+      }
+  
+      .action-button {
+        color: #1976d2;
+      }
+  
+      .delete-button {
+        color: #d32f2f;
+      }
+    }
+  }
+  
