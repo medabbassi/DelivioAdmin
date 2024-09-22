@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Target ES6 instead of ES5
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es6", // Include ES6 library for modern JavaScript features
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "types": ["react", "react-dom", "react-router-dom", "node", "axios"]
+  },
+  "include": [
+    "src"
+  ]
+}
